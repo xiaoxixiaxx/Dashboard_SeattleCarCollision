@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Collision COVID</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css libraries -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link href="css/c3.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link rel="icon" href="img/favicon_io/favicon-32x32.png">
+  <!-- css file -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- js libraries -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="js/c3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+  <!-- sidebar -->
+  <div id="info">
+    <div id="title">
+    <i class="fas fa-car-crash"></i>
+    Location of Car Collisions Before and During COVID-19
+    </div>
+    <!-- the button for selecting year -->
+    <p id='button-header'>Choose a year</p>
+    <button onclick="update(data2018); updateText('Year 2018',12199);">2018</button>
+    <button onclick="update(data2019); updateText('Year 2019',11209);">2019</button>
+    <button onclick="update(data2020); updateText('Year 2020',7178);">2020</button>
+    <button onclick="update(dataAll); updateText('Year All',30586);">All</button>
+    <p id="year-display">Year All</p>
+    <!-- display the single bar graph -->
+    <div id='bar-plot'></div>
+    <!-- display the number result -->
+    <div id="count" class="card">
+      <h5 id="desc"> # collisions in the selected year</h5>
+      <p id="year-counts">30586</p>
+    </div>
+    <div class="mouse_scroll">
+  		<div>
+  			<span class="m_scroll_arrows unu"></span>
+  			<span class="m_scroll_arrows doi"></span>
+  			<span class="m_scroll_arrows trei"></span>
+  		</div>
+  </div>
+    <p id="year-display">Comparsion for Each Year </p>
+    <!-- display the multi-series bar result -->
+    <div id='multi-series-polt'></div>
+    <h6 id="desc">You can interact and click the year above.</h6>
+    <!-- explaination result -->
+    <p id="year-display">Little Backstory <i class="fas fa-car-side"></i></p>
+    <div id="footer">
+      <p>
+        This project is to visually display the spatial location of where collisions occurred in the Seattle region.
+        The map would display the individual and the cluster of the incidents. While the plots display the
+        aggregated count of each month.
+      </p>
+      <p>
+        This project is inspired by The Rothenberg Law Firm article
+        (<a href="https://injurylawyer.com/car-accidents/has-the-covid-19-pandemic-reduced-the-number-of-car-accident-fatalities/" target="_blank">LINK</a>)
+        that discusses how COVID-19
+        influence on car accidents (written on Oct 26, 2020). Interestingly, they stated that during COVID-19
+        have the highest deadly rate of car crashes than the previous year (by 2 - 11%, various on each month
+        and states). Even though that the amount of incidents is less than the previous year. In another word,
+        during COVID-19, fewer drivers are going out on the road, which could lead to more psychological behavior
+        (and other factors such as economic) of driving on empty/ less busy roads. This research article from
+        Accident Analysis & Prevention can help explains in-depth
+        (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7364169/" target="_blank">LINK</a>)
+        .
+      </p>
+      <p>
+        We were planning to show the statistics rate of car collisions, and comparsion to the overall USA.
+        Unfortunately, we don't have time. Maybe in the future.
+      </p>
+      <br>
+      <h2><i class="far fa-user"></i> Developers:</h2>
+      </p>
+        Made by Jin Ning Huang and XiaoXi Xia <br>
+        For UW GEOG 458 Final Project by Feb - Mar 2021
+      </p>
+    </div>
+    <div id='icon-footer'>
+      <i class="fas fa-car-crash fa-10x"></i>
+    </div>
+  </div>
+  <!-- map display -->
+  <div id='map'></div>
+  <!-- js file -->
+  <script type="text/javascript" src="js/maps.js"></script>
+  <script type="text/javascript" src="js/plots.js"></script>
+</body>
+
+</html>
