@@ -1,0 +1,227 @@
+html, body, #map {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+a {
+  color: skyblue
+}
+
+/* for side panel */
+#info {
+  z-index: 1000;
+  position: fixed;
+  width: 500px;
+  top: 1%;
+  bottom: 1%;
+  left: .5%;
+  padding: 40px 15px 900px 15px;
+  background: #343a40;
+  color: white;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1026px) {
+  #info, {
+    visibility: hidden !important;
+  }
+}
+
+#info h4 i {
+  font-size: 1.25e;
+  padding-right: 10px
+}
+
+#title {
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#year-display {
+  font-size: 28px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#button-header {
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#desc {
+  text-align: center;
+  color: lightgray;
+  font-size: medium;
+  font-weight: bold;
+}
+
+#year-counts {
+  margin:0;
+  text-align: center;
+  color: orange;
+  font-size: 40px;
+}
+
+#footer {
+  /*margin-top: 50px;*/
+  margin-right: 10px;
+  font-size: 15px;
+  line-height: 150%;
+  color: lightgray;
+}
+
+#icon-footer {
+  /*text-align: center;*/
+  opacity: 0.5;
+}
+
+/* for the single bar plot */
+.bar-color { fill: steelblue; }
+
+/* highlight the year button when clicked */
+button:focus{
+    background:lightblue;
+}
+
+/* multi-bar chart for labeling */
+text {
+  fill: white
+}
+
+.tick line {
+  stroke: gray;
+}
+
+.c3-axis path {
+  stroke: gray;
+}
+
+.name, .value {
+  background-color: black;
+  color: black
+}
+
+/* color the layer control panel to gray */
+.leaflet-control-layers {
+  color: white !important;
+  background-color: none;
+  padding: 6px 8px;
+  border: none !important;
+  background: #343a40 !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 5px !important;
+}
+
+/* color the zoom button to gray */
+.leaflet-control-zoom, .leaflet-control-zoom-in, .leaflet-control-zoom-out {
+  color: white !important;
+  padding: 0px !important;
+  background-color: none;
+  border: none !important;
+  background: #343a40 !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 5px !important;
+}
+
+/* animated down arrows */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+.mouse_scroll {
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 100px;
+}
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 4px;
+
+  width: 16px;
+  height: 16px;
+}
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: .2s;
+  animation-direction: alternate;
+
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: .3s;
+  animation-direction: alternate;
+
+
+  margin-top: -6px;
+}
+
+/* making the down arrow more "alive" */
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
