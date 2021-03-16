@@ -5,6 +5,9 @@
 ![CarCollision](https://user-images.githubusercontent.com/77243665/111259010-55474c00-85db-11eb-80b7-6ff49c6c1d92.png)
 
 ## Project Description
+The dashboard visualizes the data and geographic location of all types of car collision from 2018 to 2020 and shows people what changes before and after covid-19. It raises the question if covid-19 has reduced traffic accidents. It is composed of various responded design and interactive elements and present users with rich information, multi-function, and visual effects.
+
+the major functions:
 
 ## Project Goal
 
