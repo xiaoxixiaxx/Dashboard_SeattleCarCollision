@@ -13,7 +13,9 @@ the major functions:
 * Heat maps: The heatmap visualization technology displays car collision phenomena as two-dimensional colors of different intensities. Geographical locations with frequent car collisions show stronger colors, while road sections with fewer collisions show weaker colors. Heatmap conveys information about the density of car collision to the users.
 
 * Thematic Maps & Interactive Elements: The design that fits the car collision theme reflects the visual effect. The thematic map highlights the city's traffic roads and shows the specific geographic location of the car collision. The Interactive function allows users to select different themed maps. It is designed by MapBox Studio.
+
 ## Project Goal
+The project is inspired by some thoughts about road safety data. According to statistics from experts and media reports, traffic accidents during the covid-19 period have decreased, but they have become more frequent. So, the dashboard aim to show the geographic location where Seattle accidents frequently happen. Through spatial analysis, provide users with traffic safety information.
 
 ## Data Sources
 * The data comes from [data.seattle.gov](https://data.seattle.gov/dataset/Collisions/nuam-5pkc)
