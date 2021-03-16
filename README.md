@@ -8,7 +8,11 @@
 The dashboard visualizes the data and geographic location of all types of car collision from 2018 to 2020 and shows people what changes before and after covid-19. It raises the question if covid-19 has reduced traffic accidents. It is composed of various responded design and interactive elements and present users with rich information, multi-function, and visual effects.
 
 the major functions:
+* Side Panel & Chart (responsive design): The interactive Side Panel displays the specific data of car collision from 2018 to 2020 each year, and users can switch options to view. The Chart with responsive design displays the car collision information for each month in three years and compares the correlation and difference between the data at different times in the histogram.
 
+* Heat maps: The heatmap visualization technology displays car collision phenomena as two-dimensional colors of different intensities. Geographical locations with frequent car collisions show stronger colors, while road sections with fewer collisions show weaker colors. Heatmap conveys information about the density of car collision to the users.
+
+* Thematic Maps & Interactive Elements: The design that fits the car collision theme reflects the visual effect. The thematic map highlights the city's traffic roads and shows the specific geographic location of the car collision. The Interactive function allows users to select different themed maps. It is designed by MapBox Studio.
 ## Project Goal
 
 ## Data Sources
