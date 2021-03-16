@@ -19,8 +19,9 @@
 * D3.js @v5
 * c3 CSS and JS @0.7.16
 
+## Acknowledgment
+I sincerely appreciate UW Professor Bo Zhao for providing the lectures, materials and project instructions.
+
 ##  Reference
 ##### [The Rothenberg Law Firm](https://injurylawyer.com/car-accidents/has-the-covid-19-pandemic-reduced-the-number-of-car-accident-fatalities/)
 ##### [Accident Analysis & Prevention](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7364169/)
-## Acknowledgment
-I sincerely appreciate UW Professor Bo Zhao for providing the lectures, materials and project instructions.
